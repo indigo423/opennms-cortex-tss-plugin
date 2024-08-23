@@ -1,0 +1,19 @@
+---
+name: Build Cortex Time Series Storage Plugin
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/bluebird/java-builder:0.1.0.jdk-17.b35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile source without tests
+        run: |
+          mvn -DskipITs=true -DskipTests=true clean install
+      - name: Run system test using Docker Compose
+        run: |
+          mvn -DskipITs=false -DskipTests=false clean install test integration-test
