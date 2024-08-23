@@ -106,7 +106,7 @@ public class CortexTSSConfig {
         private long metricCacheSize = 1000;
         private long externalTagsCacheSize = 1000;
         private long bulkheadMaxWaitDurationInMs = Long.MAX_VALUE;
-        private String organizationId = null;
+        private String organizationId = "cortex";
 
         public Builder writeUrl(final String writeUrl) {
             this.writeUrl = writeUrl;

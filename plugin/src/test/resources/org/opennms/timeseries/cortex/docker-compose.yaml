@@ -1,13 +1,8 @@
 ---
-version: '3'
-
-volumes:
-  data-cortex: {}
-  data-grafana: {}
-
 services:
+
   cortex:
-    image: quay.io/cortexproject/cortex:v1.17.1
+    image: docker.io/cortexproject/cortex:v1.8.0
     volumes:
       - "data-cortex:/tmp/cortex"
       - "./single-process-config.yaml:/etc/single-process-config.yaml"
@@ -25,3 +20,7 @@ services:
       - data-grafana:/var/lib/grafana
     ports:
       - "3000:3000/tcp"
+
+volumes:
+  data-grafana: {}
+  data-cortex: {}
