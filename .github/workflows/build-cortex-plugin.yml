@@ -15,7 +15,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Compile source without tests
         run: |
-          mvn -s .cicd-assets/settings.xml -DskipITs=true -DskipTests=true clean install
+          make
       - name: Run system test using Docker Compose
         run: |
-          mvn -s .cicd-assets/settings.xml -DskipITs=false -DskipTests=false clean install test integration-test
+          make tests
