@@ -30,3 +30,5 @@ java/bin/
 *.swp
 *.iml
 
+# jenv for managing Java versions on Mac OSX
+.java-version
