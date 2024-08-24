@@ -21,3 +21,8 @@ jobs:
       - name: Compile source with unit and integration tests
         run: |
           make tests
+      - name: Persist KAR file
+        uses: actions/upload-artifact@v4
+        with:
+          name: cortex-tss-kar-file
+          path: assembly/kar/target/opennms-cortex-tss-plugin.kar
