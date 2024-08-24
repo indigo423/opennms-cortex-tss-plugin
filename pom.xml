@@ -64,10 +64,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <awaitility.version>4.2.1</awaitility.version>
         <grpc.version>1.42.3</grpc.version>
         <guava.version>33.1.0-jre</guava.version>
         <hamcrest.version>2.2</hamcrest.version>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
+        <jna.version>5.14.0</jna.version>
         <json.version>20240303</json.version>
         <junit.version>4.13.2</junit.version>
         <karaf.version>4.3.10</karaf.version>
@@ -76,15 +78,19 @@
         <log4j.version>2.23.1</log4j.version>
         <metrics.version>4.2.25</metrics.version>
         <mockito.version>5.11.0</mockito.version>
+        <build-helper-maven-plugin.version>3.5.0</build-helper-maven-plugin.version>
         <okio.version>3.9.0</okio.version>
         <okhttp.version>4.12.0</okhttp.version>
-        <opennms.api.version>1.0.0</opennms.api.version>
+        <opennms.api.version>1.6.0</opennms.api.version>
+        <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
         <osgi.version>6.0.0</osgi.version>
         <osgi.compendium.version>5.0.0</osgi.compendium.version>
+        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
         <protoc.version>3.25.3</protoc.version>
         <resilience4j.version>1.7.1</resilience4j.version>
         <slf4j-api.version>1.7.36</slf4j-api.version>
         <snappy.version>1.1.10.5</snappy.version>
+        <testcontainers.version>1.20.1</testcontainers.version>
     </properties>
 
     <modules>
