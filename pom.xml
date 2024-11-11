@@ -69,7 +69,7 @@
         <guava.version>33.3.1-jre</guava.version>
         <hamcrest.version>3.0</hamcrest.version>
         <java.version>17</java.version>
-        <jna.version>5.14.0</jna.version>
+        <jna.version>5.15.0</jna.version>
         <json.version>20240303</json.version>
         <junit.version>4.13.2</junit.version>
         <karaf.version>4.3.10</karaf.version>
