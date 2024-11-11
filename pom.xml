@@ -79,7 +79,7 @@
         <metrics.version>4.2.25</metrics.version>
         <mockito.version>5.11.0</mockito.version>
         <build-helper-maven-plugin.version>3.5.0</build-helper-maven-plugin.version>
-        <okio.version>3.9.0</okio.version>
+        <okio.version>3.9.1</okio.version>
         <okhttp.version>4.12.0</okhttp.version>
         <opennms.api.version>1.6.1</opennms.api.version>
         <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
